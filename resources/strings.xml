@@ -1,0 +1,5 @@
+<resources>
+    <string id="AppName">Emergency Contact</string>
+    <string id="ItemNotSet">Not Set</string>
+    <string id="Topic">Emergency Contact</string>
+</resources>
