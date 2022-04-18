@@ -2,4 +2,14 @@
     <string id="AppName">Emergency Contact</string>
     <string id="ItemNotSet">Not Set</string>
     <string id="Topic">Emergency Contact</string>
+
+    <string id="contactName1">Contact Name 1</string>
+    <string id="contactDetails1">Contact Details 1</string>
+    
+    <string id="contactName2">Contact Name 2</string>
+    <string id="contactDetails2">Contact Details 2</string>
+    
+    <string id="contactName3">Contact Number 3</string>
+    <string id="contactDetails3">Contact Details 3</string>
+    
 </resources>

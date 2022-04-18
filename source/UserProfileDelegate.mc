@@ -10,7 +10,7 @@ import Toybox.WatchUi;
 //! Handles navigating between views
 class UserProfileDelegate extends WatchUi.BehaviorDelegate {
 
-    private var _page as Number = 1;
+    private var _page as Number = 0;
 
     //! Constructor
     public function initialize() {
@@ -20,11 +20,8 @@ class UserProfileDelegate extends WatchUi.BehaviorDelegate {
     //! Handle going to the next page
     //! @return true if handled, false otherwise
     public function onNextPage() as Boolean {
-        if (_page == 1) {
-            _page = 1;
-        } else {
-            _page++;
-        }
+        _page++;
+        _page = _page % _contacts.size();
 
         switchView();
         return true;
@@ -34,14 +31,7 @@ class UserProfileDelegate extends WatchUi.BehaviorDelegate {
     private function switchView() as Void {
         var newView;
 
-//        if (_page == 1) {
-            newView = new $.UserProfileSectionOneView();
-//        }
-//         else if (_page == 2) {
-//            newView = new $.UserProfileSectionTwoView();
-//        } else {
-//            newView = new $.UserProfileSectionThreeView();
-//        }
+        newView = new $.UserProfileSectionOneView(_page);
 
         WatchUi.switchToView(newView, self, WatchUi.SLIDE_IMMEDIATE);
     }

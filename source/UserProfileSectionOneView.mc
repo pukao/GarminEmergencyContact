@@ -12,12 +12,14 @@ import Toybox.WatchUi;
 class UserProfileSectionOneView extends WatchUi.View {
 
     private var _topicStr as String;
+    private var _index as Number;
 
     //! Constructor
-    public function initialize() {
+    public function initialize(index as Number) {
         View.initialize();
 
         _topicStr = WatchUi.loadResource($.Rez.Strings.Topic) as String;
+        _index = index;
     }
 
     //! Load your resources here
@@ -30,11 +32,15 @@ class UserProfileSectionOneView extends WatchUi.View {
     //! @param dc Device Context
     public function onUpdate(dc as Dc) as Void {
 
-        var name = "The One";
+        System.println("Index: " + _index.toString());
+
+        System.println(_contacts[_index]);
+
+        var name = _contacts[_index].get("name");
         (findDrawableById("ContactNameLabel") as Text).setText(name);
 
-        var number = "+49 151 123123123";
-        (findDrawableById("ContactNumberLabel") as Text).setText(number);
+        var details = _contacts[_index].get("details");
+        (findDrawableById("ContactNumberLabel") as Text).setText(details);
 
         View.onUpdate(dc);
     }
