@@ -10,6 +10,11 @@
         <property id="contactName3" type="string"></property>
         <property id="contactDetails3" type="string"></property>
 
+        <property id="contactName4" type="string"></property>
+        <property id="contactDetails4" type="string"></property>
+
+        <property id="contactName5" type="string"></property>
+        <property id="contactDetails5" type="string"></property>
     </properties>
 
     <settings>
@@ -34,5 +39,18 @@
             <settingConfig type="alphaNumeric" maxLength="20" />
         </setting>
 
+        <setting propertyKey="@Properties.contactName4" title="@Strings.contactName4">
+            <settingConfig type="alphaNumeric" maxLength="20" />
+        </setting>
+        <setting propertyKey="@Properties.contactDetails4" title="@Strings.contactDetails4">
+            <settingConfig type="alphaNumeric" maxLength="20" />
+        </setting>
+
+        <setting propertyKey="@Properties.contactName5" title="@Strings.contactName5">
+            <settingConfig type="alphaNumeric" maxLength="20" />
+        </setting>
+        <setting propertyKey="@Properties.contactDetails5" title="@Strings.contactDetails5">
+            <settingConfig type="alphaNumeric" maxLength="20" />
+        </setting>
     </settings>
 </resources>

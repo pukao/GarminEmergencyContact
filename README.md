@@ -1,6 +1,6 @@
 # EmergencyContact app for connectIQ Garmin
 
-EmergencyContact is a watch app in which you can store up to three Emergency contact details.
+EmergencyContact is a watch app in which you can store up to five Emergency contact details.
 Available on [GARMIN app store](https://apps.garmin.com/en-US/apps/156d0b9f-612c-4612-9a01-339d0c8036b3)
 
 ---

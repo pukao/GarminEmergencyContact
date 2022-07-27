@@ -32,7 +32,7 @@ class UserProfileApp extends Application.AppBase {
         // use Application.Storage and Application.Properties methods
         System.println("Read settings - Storage");
 
-        for (var i = 1; i <= 3; i++) {
+        for (var i = 1; i <= 5; i++) {
             var name;
             var details;
             var id;
