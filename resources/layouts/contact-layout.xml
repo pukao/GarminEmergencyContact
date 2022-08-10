@@ -1,4 +1,4 @@
-<layout id="SectionOneLayout">
+<layout id="ContactLayout">
 
     <label id="ContactNameLabel" x="50%" y="30%" font="Graphics.FONT_SMALL" justification="Graphics.TEXT_JUSTIFY_CENTER" />
     <label id="ContactNumberLabel" x="50%" y="50%" font="Graphics.FONT_SMALL" justification="Graphics.TEXT_JUSTIFY_CENTER" />

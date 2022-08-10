@@ -25,7 +25,7 @@ class UserProfileSectionOneView extends WatchUi.View {
     //! Load your resources here
     //! @param dc Device context
     public function onLayout(dc as Dc) as Void {
-        setLayout($.Rez.Layouts.SectionOneLayout(dc));
+        setLayout($.Rez.Layouts.ContactLayout(dc));
     }
 
     //! Update the view
