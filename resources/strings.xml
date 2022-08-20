@@ -1,7 +1,6 @@
 <resources>
     <string id="AppName">Contacts</string>
     <string id="ItemNotSet">Not Set</string>
-    <string id="Topic">Emergency Contact</string>
 
     <string id="contactName1">Contact Name 1</string>
     <string id="contactDetails1">Contact Details 1</string>

@@ -11,14 +11,12 @@ import Toybox.WatchUi;
 //! Shows user information about weight, height, gender, and wake time
 class UserProfileSectionOneView extends WatchUi.View {
 
-    private var _topicStr as String;
     private var _index as Number;
 
     //! Constructor
     public function initialize(index as Number) {
         View.initialize();
 
-        _topicStr = WatchUi.loadResource($.Rez.Strings.Topic) as String;
         _index = index;
     }
 
