@@ -14,6 +14,7 @@ var _contacts = [];
 
 //! This app demonstrates how to access user profile data from a device.
 //! Press the menu to cycle through three screens of user profile data.
+(:glance)
 class UserProfileApp extends Application.AppBase {
 
     //! Constructor
@@ -64,6 +65,11 @@ class UserProfileApp extends Application.AppBase {
     //! @return Array Pair [View, Delegate]
     public function getInitialView() as Array<Views or InputDelegates>? {
         return [new $.UserProfileSectionOneView(0), new $.UserProfileDelegate()] as Array<Views or InputDelegates>;
+
+    }
+
+    public function getGlanceView() as Lang.Array<WatchUi.GlanceView>? {
+        return [new $.WidgetGlanceView()] as Array<WatchUi.GlanceView>;
     }
 
 }
