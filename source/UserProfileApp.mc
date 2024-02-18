@@ -25,6 +25,11 @@ class UserProfileApp extends Application.AppBase {
     //! Handle app startup
     //! @param state Startup arguments
     public function onStart(state as Dictionary?) as Void {
+        // if ((state != null) && (state.get(:launchedFromGlance))) {
+        //     // Launched from glance
+        // } else {
+        //     // Launched from activity menu
+        // }
        self.onSettingsChanged();
     }
 
@@ -68,8 +73,8 @@ class UserProfileApp extends Application.AppBase {
 
     }
 
-    public function getGlanceView() as Lang.Array<WatchUi.GlanceView>? {
-        return [new $.WidgetGlanceView()] as Array<WatchUi.GlanceView>;
-    }
+    // public function getGlanceView() as Lang.Array<WatchUi.GlanceView>? {
+    //     return [new $.WidgetGlanceView()] as Array<WatchUi.GlanceView>;
+    // }
 
 }
